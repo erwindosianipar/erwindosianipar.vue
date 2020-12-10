@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <navbar />
+    <sidebar />
+    <div id="c-content">
+      <corona-virus />
+      <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-9">
+              <router-view />
+            </div>
+          </div>
+          <foot />
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/theme/Navbar"
+import Sidebar from "./components/theme/Sidebar"
+import CoronaVirus from "./components/widget/CoronaVirus"
+import Foot from "./components/theme/Footer"
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    Navbar,
+    Sidebar,
+    CoronaVirus,
+    Foot,
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

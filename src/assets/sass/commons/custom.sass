@@ -1,0 +1,89 @@
+/**
+ * Custom
+ *
+ * Created by Erwindo Sianipar 2020/12/08.
+ * Copyright (c) 2020 Erwindo Sianipar. All rights reserved.
+ */
+
+#c-sidebar
+  background: #f0f0f0
+  overflow-y: auto
+  position: fixed
+  width: 320px
+  height: 100%
+  z-index: 1
+  left: 0
+  top: 0
+
+#c-content
+  margin-left: 320px
+
+@media(max-width: 1023px)
+  #c-sidebar
+    margin-left: -320px
+    transition: .3s
+    height: 100%
+
+  #c-sidebar.is-active
+    opacity: 100
+    margin-left: 0
+    transition: .3s
+    box-shadow: 0 1px 4px 0 rgba(26, 20, 33, 0.2)
+
+  #c-content
+    transition: .3s
+    margin-left: 0
+
+  #c-content
+    margin-left: 0
+    transition: .3s
+
+@media print
+  #c-sidebar
+    display: none
+
+.c-shadow
+  box-shadow: 0 1px 4px 0 rgba(26,20,33,.15)
+
+.c-brand
+  width: 140px
+
+.c-underscore
+  background-image: linear-gradient(transparent, transparent 60%, #96d5eb 0, #96d5eb 90%, transparent 0, transparent)
+
+#c-tab-content div
+  display: none
+
+#c-tab-content div.is-active
+  display: block
+
+.c-skeleton
+  z-index: 0
+  display: block
+  box-sizing: border-box
+  position: relative
+  overflow: hidden
+  background-color: #efefef
+
+.c-skeleton::after
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-repeat: no-repeat
+  transform: translateX(-100%)
+  background-size: 99% 100%
+  background-image: linear-gradient(89deg, rgb(239, 239, 239), rgb(224, 224, 224))
+  animation: 1.3s linear 1ms infinite normal backwards running shimmer
+  content: ''
+
+@keyframes shimmer
+  100%
+    transform: translateX(100%)
+
+.c-no-border-radius
+  border-radius: 0
+
+.c-no-underline
+  text-decoration: none!important

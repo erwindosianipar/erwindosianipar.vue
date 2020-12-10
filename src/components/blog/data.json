@@ -1,0 +1,90 @@
+{
+  "2020": [
+    {
+      "slug": "migrasi-website-dari-ruby-jekyll-ke-vue-js",
+      "date": "December 05",
+      "title": "Migrasi Website dari Ruby (Jekyll) ke Vue JS",
+      "description": "Mencoba menerapkan Vue JS untuk website dan blog pribadi."
+    },
+    {
+      "slug": "pecahkanlah-masalah-bukan-malah-memberbaikinya",
+      "date": "October 31",
+      "title": "Pecahkanlah Masalah Bukan Malah Memperbaikinya",
+      "description": "Masalah itu umum dalam proses software development bahkan di kehidupan sehari-hari."
+    },
+    {
+      "slug": "memperbaiki-deployment-target-warning-cocoapods-xcode-12",
+      "date": "October 08",
+      "title": "Memperbaiki Deployment Target Warning CocoaPods Xcode 12",
+      "description": "The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99."
+    },
+    {
+      "slug": "membuat-game-tictactoe-ios-apps-menggunakan-swift",
+      "date": "March 04",
+      "title": "Membuat Game Tictactoe iOS Apps Menggunakan Swift",
+      "description": "Tutorial sederhana membuat aplikasi game pada perangkat iOS."
+    },
+    {
+      "slug": "belajar-menggunakan-docker-untuk-deploy-aplikasi",
+      "date": "February 13",
+      "title": "Belajar Menggunakan Docker untuk Deploy Aplikasi",
+      "description": "Simple and flexible deployment tricks."
+    },
+    {
+      "slug": "membuat-pagination-pada-website-jekyll",
+      "date": "February 09",
+      "title": "Membuat Pagination pada website Jekyll",
+      "description": "Mengaktifkan plugin pagination pada website berbasis Jekyll."
+    },
+    {
+      "slug": "bagaimana-saya-memanajemen-waktu-setiap-hari",
+      "date": "January 22",
+      "title": "Bagaimana Saya Memanajemen Waktu Setiap Hari",
+      "description": "Tulisan ini adalah pengalaman pribadi dalam menjalani rutinitas."
+    },
+    {
+      "slug": "beberapa-tools-yang-saya-gunakan-untuk-keperluan-coding",
+      "date": "January 05",
+      "title": "Beberapa Tools yang Saya Gunakan untuk Keperluan Coding",
+      "description": "Berikut ini adalah beberapa tools yang saya gunakan sehari-hari."
+    },
+    {
+      "slug": "resolusi-tahun-2020-beralih-menggunakan-sistem-operasi",
+      "date": "January 04",
+      "title": "Resolusi Tahun 2020 Beralih Menggunakan Sistem Operasi",
+      "description": "Resolusi kecil untuk mulai menjalani tahun yang baru"
+    }
+  ],
+  "2019": [
+    {
+      "slug": "hello-world-ini-tulisan-pertama-di-blog-jekyll",
+      "date": "December 25",
+      "title": "Hello World! Ini tulisan pertama di Blog Jekyll",
+      "description": "Berikut ini adalah artikel pertama yang saya publish di blog ini."
+    },
+    {
+      "slug": "sap01-fundamentals-introduction-of-system-applications-and-producs",
+      "date": "October 01",
+      "title": "SAP01 - Fundamentals Introduction of System Applications and Producs",
+      "description": "Hello all! Today I'll try to introduce the Fundamentals of System Applications and Producs in SAP01."
+    },
+    {
+      "slug": "today-i-learned-introduction-grant-and-revoke-on-sql-server",
+      "date": "May 24",
+      "title": "Today I Learned: Introduction Grant and Revoke on SQL Server",
+      "description": "Data Control Language dalam SQL Server Management Studio."
+    },
+    {
+      "slug": "waktu-yang-dibutuhkan-saat-membaca-dalam-satuan-menit",
+      "date": "May 07",
+      "title": "Waktu yang Dibutuhkan saat Membaca dalam Satuan Menit",
+      "description": "Kita dapat menghitung lama dari suatu tulisan atau artikel untuk dibaca."
+    },
+    {
+      "slug": "bosque-bahasa-pemrograman-baru-dari-microsoft",
+      "date": "May 04",
+      "title": "Bosque Bahasa Pemrograman Baru dari Microsoft",
+      "description": "Bahasa pemrograman baru yang sederhana, jelas, dan mudah dipahami. Bosque programming."
+    }
+  ]
+}

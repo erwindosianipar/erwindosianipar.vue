@@ -1,0 +1,27 @@
+name: Workflows Build Application
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Setup Node
+        uses: actions/setup-node@master
+
+      - name: NPM Installation
+        run: npm install
+
+      - name: NPM Run Lint
+        run: npm run lint
+
+        - name: NPM Run Build
+        run: npm run build
