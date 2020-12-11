@@ -1,2 +1,6 @@
+# redirect netlify default subdomain to primary
+https://erwindosianipar.netlify.app/* https://erwindosianipar.me/:splat 301!
+https://erwindosianipar.netlify.com/* https://erwindosianipar.me/:splat 301!
+
+# redirect dynamically created page
 /* /index.html 200
-https://erwindosianipar.netlify.app/* https://erwindosianipar.me 301!
