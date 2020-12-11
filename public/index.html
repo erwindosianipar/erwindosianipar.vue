@@ -15,6 +15,15 @@
   <meta name="msapplication-TileImage" content="https://github.com/erwindosianipar.png" />
   <meta name="msapplication-TileColor" content="#535353" />
   <meta name="theme-color" content="#535353" />
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect
+      delete sessionStorage.redirect
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect)
+      }
+    })()
+  </script>
 </head>
 
 <body>
