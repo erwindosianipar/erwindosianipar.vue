@@ -10,7 +10,7 @@
   <link rel="dns-prefetch" href="https://pro.fontawesome.com/">
   <link rel="dns-prefetch" href="https://github.com/">
   <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com/">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>Erwindo Sianipar</title>
   <meta name="robots" content="index, follow" />
   <meta name="msapplication-TileImage" content="https://github.com/erwindosianipar.png" />
   <meta name="msapplication-TileColor" content="#535353" />
@@ -18,12 +18,11 @@
 </head>
 
 <body>
-  <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-      Please enable it to continue.</strong>
-  </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+  <script>
+    const segment = 1
+    sessionStorage.redirect = '/' + location.pathname.slice(1).split('/').slice(segment).join('/')
+    location.replace(location.pathname.split('/').slice(0, 1 + segment).join('/'))
+  </script>
 </body>
 
 </html>
