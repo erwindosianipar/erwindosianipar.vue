@@ -12,23 +12,8 @@ Vue.use(VueMeta, {
   refreshOnceOnNavigation: true
 })
 
-var appTitle = 'Erwindo Sianipar'
-
-router.afterEach(to => {
-  Vue.nextTick(() => {
-    document.title = `${to.meta.title} | ${appTitle}`
-  })
-})
-
 new Vue({
   router,
   store,
-  render: h => h(App),
-  created() {
-    if (sessionStorage.redirect) {
-      const redirect = sessionStorage.redirect
-      delete sessionStorage.redirect
-      this.$router.push(redirect)
-    }
-  },
+  render: h => h(App)
 }).$mount('#app')
