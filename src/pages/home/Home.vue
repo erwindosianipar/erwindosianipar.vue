@@ -9,7 +9,11 @@
       <p class="has-text-link">
         Hello, how are you? What happen today? Wish you have the best right now. It's me,
         Erwindo Sianipar and I was born
-        <span class="tag is-link is-rounded" id="age">0</span> seconds ago. A young man
+        <span class="tag is-link is-rounded c-cursor-pointer c-tooltip">
+          <span id="age-seconds">0</span>
+          <span class="c-tooltip-text" id="age-years">0</span>
+        </span>
+        seconds ago. A young man
         and energic but just a mere human, who still pursuing my dreams. Let us know more,
         and be friend for sake of humanity and freedom 😁🎉
       </p>
@@ -62,18 +66,22 @@
 <script>
 var $ = require("jquery")
 
-function updateAge() {
-  var born = new Date("June 2000, 03")
-  var time = (new Date().getTime() - born) / 1000
-  return Math.round(time).toLocaleString("id-ID")
+function updateAge(time) {
+  $(document).ready(function () {
+    $("#age-seconds").html(time.toLocaleString())
+  })
 }
+
+var born = new Date("2000-06-03")
 
 export default {
   created: function () {
+    $(document).ready(function () {
+      $('#age-years').html(`${(new Date().getFullYear() - born.getFullYear())} years ago`)
+    })
     setInterval(function () {
-      $(document).ready(function () {
-        $("#age").html(updateAge())
-      })
+      var time = Math.floor((new Date().getTime() - born) / 1000)
+      updateAge(time)
     }, 1000)
   },
   metaInfo: {
