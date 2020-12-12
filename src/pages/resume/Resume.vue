@@ -77,17 +77,18 @@
 <script>
 var $ = require("jquery")
 
-$(document).ready(function () {
-  $("#tabs li").on("click", function () {
-    var tab = $(this).data("tab")
-    $("#tabs li").removeClass("is-active")
-    $(this).addClass("is-active")
-    $("#c-tab-content div").removeClass("is-active")
-    $('div[data-content="' + tab + '"]').addClass("is-active")
-  })
-})
-
 export default {
+  created: function () {
+    $(document).ready(function () {
+      $("#tabs li").on("click", function () {
+        var tab = $(this).data("tab")
+        $("#tabs li").removeClass("is-active")
+        $(this).addClass("is-active")
+        $("#c-tab-content div").removeClass("is-active")
+        $('div[data-content="' + tab + '"]').addClass("is-active")
+      })
+    })
+  },
   metaInfo: {
     title: "Resume",
     titleTemplate: "%s | Erwindo Sianipar",
