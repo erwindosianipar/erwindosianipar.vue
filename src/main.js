@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueMeta from 'vue-meta'
 import App from './App'
 
+import './registerServiceWorker'
+
 import router from './router'
 import store from './store'
 

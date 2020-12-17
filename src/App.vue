@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <navbar />
     <sidebar />
     <div id="c-content">
