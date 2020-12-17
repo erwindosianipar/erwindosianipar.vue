@@ -2,6 +2,8 @@
   <div>
     <h1>{{ title }}</h1>
     <h2 class="subtitle">{{ description }}</h2>
+    <p>{{ date }}</p>
+    <hr>
     <router-view />
   </div>
 </template>
@@ -12,6 +14,7 @@ export default {
     return {
       title: this.$route.meta.title,
       description: this.$route.meta.description,
+      date: this.$route.meta.date,
     }
   },
   metaInfo() {

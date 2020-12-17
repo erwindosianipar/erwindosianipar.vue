@@ -25,7 +25,8 @@ const blogRoutes = Object.keys(BlogEntries).map(section => {
     component: () => import(`../components/blog/markdown/${section}/${post.slug}.md`),
     meta: {
       title: `${post.title}`,
-      description: `${post.description}`
+      description: `${post.description}`,
+      date: `${post.date}, ${section}`,
     }
   }))
   return {
