@@ -1,9 +1,8 @@
 <template>
-  <footer>
-    <hr>
+  <footer class="notification c-no-border-radius">
     <div class="columns is-centered">
       <div class="column is-9">
-        <p>&copy; 2019 - {{ year }} All Rights Reserved - Designed & Coded by Erwindo Sianipar.</p>
+        <p>&copy; 2019 - {{ year }} All Rights Reserved - Designed & Coded with <i class="fas fa-heart c-heartbeat has-text-danger"></i> by Erwindo Sianipar.</p>
       </div>
     </div>
   </footer>

@@ -20,8 +20,8 @@
       <p class="has-text-link">
         I'm from Pematangsiantar, Indonesia and now live in Jakarta, currently working as
         iOS Developer on a Indonesia-based company. I don’t have important things to do
-        except sitting in front of my laptop. I'm interested in programming, photography,
-        and UI/UX design, I also like to watch movies and listening musics.
+        except sitting in front of my laptop. <strong>I'm interested in programming, photography,
+        and UI/UX design</strong>, I also like to watch movies and listening musics.
       </p>
       <p class="has-text-link">
         Maybe that the things if you want to know me more wkwkwk.

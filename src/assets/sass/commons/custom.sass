@@ -52,6 +52,11 @@
 .c-underscore
   background-image: linear-gradient(transparent, transparent 60%, #96d5eb 0, #96d5eb 90%, transparent 0, transparent)
 
+a.c-underscore:hover
+  background: #96d5eb
+  transition: .5s
+  color: $blue
+
 #c-tab-content div
   display: none
 
@@ -133,3 +138,27 @@
   bottom: 0
   right: 0
   border: 2px solid #fff
+
+.c-blink
+  animation: blink 1s linear infinite
+
+@keyframes blink
+  50%
+    opacity: 0
+
+.c-heartbeat
+  animation: heartbeat 1s ease infinite
+
+@keyframes heartbeat
+  0%
+    transform: scale(.75)
+  20%
+    transform: scale(1)
+  40%
+    transform: scale(.75)
+  60%
+    transform: scale(1)
+  80%
+    transform: scale(.75)  
+  100%
+    transform: scale(.75)

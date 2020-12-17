@@ -11,9 +11,9 @@
               <router-view />
             </div>
           </div>
-          <foot />
         </div>
       </section>
+      <foot />
     </div>
   </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="mt-6 pt-1">
-      <div class="notification is-danger-is-light c-no-border-radius">
+      <div class="notification c-no-border-radius">
         <div class="has-text-weight-bold mb-4">
-          <span class="tag is-danger">LIVE</span> Coronavirus update in Indonesia
+          <span class="tag is-danger"><span class="c-blink mr-1">●</span> LIVE</span> Coronavirus update in Indonesia
         </div>
         <div class="table-container">
           <nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
@@ -44,6 +44,15 @@
                   }}</span>
                 </a>
               </li>
+              <li class="c-no-underline">
+                <span class="icon icon-small">
+                  <i class="fad fa-clock"></i>
+                </span>
+                <span class="mr-1">Last update:</span>
+                <span class="has-text-weight-bold">
+                  {{ lastCovidUpdate }}
+                </span>
+              </li>
             </ul>
           </nav>
         </div>
@@ -62,6 +71,10 @@ export default {
   computed: {
     covid() {
       return this.$store.state.covid19Data
+    },
+    lastCovidUpdate() {
+      const date = new Date(this.$store.state.covid19Data['lastUpdate'])
+      return `${date.getHours()}:${date.getMinutes()} WIB`
     },
     loading() {
       return this.$store.state.loadingCovid19
