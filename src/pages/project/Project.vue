@@ -11,6 +11,16 @@
         </div>
       </div>
     </div>
+    <div v-else-if="fetchProjectError">
+      <div class="notification is-light mb-3">
+        <h3 class="mt-0">Couldn't load data from server</h3>
+        <p>Sorry, an error occurred when retreive data from server. Please try again later or contact support, If you contact support please provide these details.</p>
+        <div class="buttons">
+          <button @click="getProjectList" class="button is-link is-rounded">Try Again</button>
+          <router-link to="/contact" class="button is-rounded">Contact Support</router-link>
+        </div>
+      </div>
+    </div>
     <div v-else>
       <div v-for="project in projectList" :key="project.id">
         <div class="columns">
@@ -69,9 +79,16 @@ export default {
     loading() {
       return this.$store.state.loadingProject
     },
+    fetchProjectError() {
+      return this.$store.state.fetchProjectError
+    }
   },
   created() {
-    this.$store
+    this.getProjectList()
+  },
+  methods: {
+    getProjectList() {
+      this.$store
       .dispatch("getProjectList")
       .then((result) => {
         this.$store.commit("setProjectList", result.data)
@@ -79,7 +96,10 @@ export default {
       })
       .catch((err) => {
         console.log(err)
+        this.$store.commit("toggleFetchProjectError", true)
+        this.$store.commit("toggleLoadingProject", false)
       })
+    }
   },
   metaInfo: {
     title: "Project",
