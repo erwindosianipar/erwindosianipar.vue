@@ -10,7 +10,9 @@ export default new Vuex.Store({
     projectList: [],
     covid19Data: {},
     loadingProject: false,
-    loadingCovid19: false
+    loadingCovid19: false,
+    fetchCovidError: false,
+    fetchProjectError: false,
   },
   mutations: {
     setProjectList(state, data) {
@@ -24,6 +26,12 @@ export default new Vuex.Store({
     },
     toggleLoadingCovid19(state, value) {
       state.loadingCovid19 = value
+    },
+    toggleFetchCovidError(state, value) {
+      state.fetchCovidError = value
+    },
+    toggleFetchProjectError(state, value) {
+      state.fetchProjectError = value
     }
   },
   actions: {

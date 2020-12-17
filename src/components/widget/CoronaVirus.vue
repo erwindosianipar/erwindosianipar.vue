@@ -10,6 +10,11 @@
             <div v-if="loading">
               <Skeleton height="1.5rem" />
             </div>
+            <div v-else-if="fetchCovidError">
+              <span class="icon is-small mr-2"><i class="fal fa-info-circle"></i></span>
+              <span>Failed to retrieve data, please</span>
+              <span class="c-cursor-pointer has-text-link ml-1" @click="fetchCovidData">try again</span>
+            </div>
             <ul v-else>
               <li>
                 <a :href="covid['confirmed']['detail']" class="c-no-underline">
@@ -79,9 +84,16 @@ export default {
     loading() {
       return this.$store.state.loadingCovid19
     },
+    fetchCovidError() {
+      return this.$store.state.fetchCovidError
+    }
   },
   created() {
-    this.$store
+    this.fetchCovidData()
+  },
+  methods: {
+    fetchCovidData() {
+      this.$store
       .dispatch("getCovid19Data")
       .then((result) => {
         this.$store.commit("setCovid19Data", result.data)
@@ -89,7 +101,10 @@ export default {
       })
       .catch((err) => {
         console.log(err)
+        this.$store.commit("toggleLoadingCovid19", false)
+        this.$store.commit("toggleFetchCovidError", true)
       })
-  },
+    }
+  }
 }
 </script>
