@@ -25,9 +25,9 @@ export default {
       titleTemplate: "%s | Erwindo Sianipar",
       meta: [
         { name: "description", content: "Error 404 Look like you missing something" },
-        { name: "og:title", content: "Not Found | Erwindo Sianipar" },
+          { name: "og:title", content: "Not Found | Erwindo Sianipar" },
         { name: "og:description", content: "Error 404 Look like you missing something" },
-        { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+        { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
       ],
     }
   },

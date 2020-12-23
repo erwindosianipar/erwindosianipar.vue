@@ -6,7 +6,7 @@
       <div class="level-left">
         <div class="level-item">
           <figure class="image is-48x48">
-            <img class="is-rounded" src="https://github.com/erwindosianipar.png" alt="Erwindo Sianipar">
+            <img class="is-rounded" src="https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" alt="Erwindo Sianipar">
             <i class="c-online-indicator"></i>
           </figure>
         </div>
@@ -131,7 +131,7 @@ export default {
         content:
           "Get in touch with Erwindo Sianipar and Let’s make something great together",
       },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }

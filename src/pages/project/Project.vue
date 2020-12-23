@@ -114,7 +114,7 @@ export default {
         name: "og:description",
         content: "Several list of Erwindo Sianipar open source project",
       },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }

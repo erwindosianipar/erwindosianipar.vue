@@ -92,12 +92,12 @@ export default {
         name: "description",
         content: "People who are always on the move, but never settle for less.",
       },
-      { name: "property:title", content: "Home | Erwindo Sianipar" },
+      { name: "og:title", content: "Home | Erwindo Sianipar" },
       {
-        name: "property:description",
+        name: "og:description",
         content: "People who are always on the move, but never settle for less.",
       },
-      { name: "property:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }
