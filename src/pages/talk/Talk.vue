@@ -34,7 +34,7 @@ export default {
         name: "og:description",
         content: "Erwindo Sianipar as a speaker at sharing event",
       },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }

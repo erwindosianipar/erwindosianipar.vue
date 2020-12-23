@@ -34,7 +34,7 @@ export default {
         name: "og:description",
         content: "Improvement log of this website",
       },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }

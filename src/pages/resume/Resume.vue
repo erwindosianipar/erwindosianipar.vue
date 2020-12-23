@@ -102,7 +102,7 @@ export default {
         name: "og:description",
         content: "As far as Erwindo Sianipar carrer as a Software Engineer",
       },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }

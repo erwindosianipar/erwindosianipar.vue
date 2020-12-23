@@ -67,7 +67,7 @@ export default {
       { name: "description", content: "About Erwindo Sianipar know me more as well" },
       { name: "og:title", content: "About | Erwindo Sianipar" },
       { name: "og:description", content: "About Erwindo Sianipar know me more as well" },
-      { name: "og:image", content: "https://github.com/erwindosianipar.png" },
+      { name: "og:image", content: "https://erwindosianipar.github.io/cdn/images/erwindosianipar.jpeg" },
     ],
   },
 }
