@@ -7,6 +7,10 @@
         <h3 class="mt-2">1st IT Competition 2019 Methodist University of Indonesia</h3>
         <p>Apr 2019 · IT Competition 2019 Methodist University of Indonesia</p>
       </div>
+      <div class="notification">
+        <h3 class="mt-2">3th Lomba Kreatif Siswa (LKS) Tingkat Nasional Tahun 2016</h3>
+        <p>March 2016 · Dispendik Lomba Kreatif Siswa Tingkat Nasional 2016</p>
+      </div>
     </div>
   </div>
 </template>

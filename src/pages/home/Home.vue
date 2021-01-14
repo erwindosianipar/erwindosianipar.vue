@@ -28,6 +28,22 @@
       </p>
     </div>
     <div class="mt-5">
+      <div>
+        <h3>Clients I have worked for</h3>
+      </div>
+      <div class="tile">
+        <div class="tile c-center">
+          <img src="@/assets/img/lionparcel.svg" class="c-height-50 c-grayscale" alt="PT Lion Parcel">
+        </div>
+        <div class="tile c-center">
+          <img src="@/assets/img/enigmacamp.svg" class="c-height-50 c-grayscale" alt="PT Enigma Cipta Humanika">
+        </div>
+        <div class="tile c-center">
+          <img src="@/assets/img/tobatronik.svg" class="c-height-50 c-grayscale" alt="CV Tojai Baru Tronik">
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
       <ul class="menu-list">
         <li>
           <span class="panel-icon"> 🖥 </span>
